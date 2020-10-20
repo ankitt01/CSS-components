@@ -1,38 +1,3 @@
-/* body {
-    place-items: center;
-}
-.card1 {
-    width: 400px;
-    margin: auto;
-}
-.card1:hover .card-content {
-    transform: rotateY(0.5turn);
-    
-}
-.card-content {
-    position: relative;
-    padding: 5em;
-    transition: transform 3s;
-    background-color: pink;
-    transform-style: preserve-3d;
-}
-.front-side, .back-side {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 2em;
-    backface-visibility: hidden;
-}
-.front-side {
-    
-    transform: rotateY(0.5turn);
-    transform: translateZ(200px);
-}
-.card1:hover .back-side {
-    transform: translateY(180deg);
-} */
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 
@@ -57,6 +22,7 @@ body {
   display: grid;
   place-items: center;
   font-family: 'Oswald', sans-serif;
+  background-color: lightgray;
 }
 
 .card {
@@ -137,73 +103,76 @@ body {
   color: var(--clr);
   background: #333;
 }
+  
 
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  .container {
-    width: 350px;
-    height: 450px;
-  }
-  .card2 {
-    background-color: blue;
-    height: 450px;
-    padding: 2rem;
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-  }
-  .front, .back {
-    position: absolute;
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-  }
+.card2 {
+  width: 35vw;
+  height: 80vh;
+  margin: auto;
+  position: relative;
+}
+.mini {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 2px 2px rgba(0,0,0.0.25);
+}
+.mini p {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mini img {
+  width: 100%;
+  height: 90%;
+  border: 10px solid white;
+}
+.minicard1:hover,.minicard4:hover {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  transition: 0.5s ease-in-out;
 
-  .front {
-    background-color: red;
-  }
-  .front::before {
-    content: '';
-    position: absolute;
-    --spacer: 1em;
-    top: var(--spacer);
-    bottom: var(--spacer);
-    left: var(--spacer);
-    right: var(--spacer);
-    border: 3px solid currentColor;
-    transform: var(--level-one);
-
-  }
-  .back::before {
-    content: '';
-    position: absolute;
-    top: 1em;
-    bottom: 1em;
-    left: 1em;
-    right: 1em;
-    border: 3px solid currentColor;
-    transform: var(--level-one);
-
-  }
-  .back {
-    transform: rotateY(0.5turn);
-    background-color: blue;
-  }
-  .container:hover .card2 {
-    transform: rotateY(0.5turn);
-    transition: transform 2s;
-  }
-  label {
-      position: absolute;
-      top: 45%;
-      left: 45%;
-      transform: translateZ(100px);
-  }
+}
+.minicard2:hover,.minicard3:hover {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+.minicard1 {
+  
+  top: 10%;
+  left: 30%;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+.minicard2 {
+  top: 20%;
+  left: 50%;
+  transform: rotate(10deg);
+  transition: 0.5s ease-in-out;
+  z-index: 4;
+}
+.minicard3 {
+  top: 30%;
+  left: 20%;
+  transform: rotate(-10deg);
+  transition: 0.5s ease-in-out;
+  z-index: 3;
+}
+.minicard4 {
+  top: 40%;
+  left: 40%;
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+}

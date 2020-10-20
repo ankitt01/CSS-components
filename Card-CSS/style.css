@@ -176,3 +176,43 @@ body {
   z-index: 2;
   transition: 0.5s ease-in-out;
 }
+
+.card3 {
+  width: 200px;
+  height: 275px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  border: 0 0 20px rgba(0,0,0.0.25);
+}
+.card3 img {
+  width: 100%;
+  height: 150px;
+  transition-duration: 1s;
+}
+.card-body {
+  text-align: center;
+}
+.card-body h2 {
+  font-size: 18px;
+}
+.card-body p{
+  font-size: 12px;
+}
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  transition-duration: 0.5s;
+  transition-delay: .5s;
+}
+.card3:hover img {
+  height: 275px;
+}
+.card3:hover .box{
+  background-color: white;
+}

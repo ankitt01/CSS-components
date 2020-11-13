@@ -1,5 +1,6 @@
 body {
     box-sizing: border-box;
+    background-color: #EEEEEE;
 }
 .menu {
     padding: 5rem 0;
@@ -28,7 +29,12 @@ body {
     display: grid;
     padding: 10px;
     max-width: 40rem;
+    border-radius: 7px;
+    transition: 1s ease;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.07),
+                -10px -10px 10px 0 rgba(255,255,255,1)
 }
+
 .photo {
     height: 200px;
     width: 100%;
@@ -62,7 +68,8 @@ header h4 {
 }
 .filter-btn {
     background: transparent;
-    border-color: #c59d5f;
+    /* border-color: #c59d5f; */
+    border: none;
     font-size: 1rem;
     text-transform: capitalize;
     margin: 0 0.5rem;
@@ -73,6 +80,8 @@ header h4 {
     cursor: pointer;
     transition: all 0.3s linear;
     outline: none;
+    box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.1),
+                -4px -4px 4px 0 rgba(255,255,255,1)
 }
 .filter-btn:hover {
     background-color: #c59d5f;

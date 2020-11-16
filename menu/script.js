@@ -100,16 +100,8 @@ filterBtns.forEach(function(btn) {
             displayMenuItems(menuCategory);
         }
  
-    })
-})
-
-
-
-
-
-
-
-
+    });
+});
 
 
   function displayMenuItems(menuItems) {

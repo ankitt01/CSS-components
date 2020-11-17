@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+      display: flex;
+      flex-direction: column;
+      margin: 100px 50px;
+      padding: 1em;
+}
+.hero-img img {
+    width: 100%;
+}
+.hero-text {
+    margin-top: 30px;
+}
+.giveaway {
+    margin: 10px 0 30px 0;
+}
+.hero-text p {
+    color: #474747;
+}
+
+.deadline {
+    display: flex;
+    padding: 1em;
+}
+.deadline-format {
+    background-color: rgb(9, 15, 70);
+    color: white;
+    padding: 1em;
+    width: 25%;
+    border-right: 1px solid white;
+    text-align: center;
+}
+.deadline-format h4 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+span {
+    color: #dbdbdb;
+    font-size: 0.7rem;
+}

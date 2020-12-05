@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #DCF5FF;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.inner {
+  background-color: #00B6FF;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background-color: #00B6FF;
+}
+
+.inner:hover span {
+  color: #00B6FF;
+}
+
+.inner h1 {
+  color: white;
+  margin: 0;
+}
+
+.inner p {
+  color: white;
+  font-size: .8rem;
+}
+
+.inner span {
+  color: white;
+  float: right;
+  font-weight: bold;
+  margin-right: 3%;
+  margin-top: 3%;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.container2 {
+  width: 15%;
+  background-color: #fff;
+  color: white;
+  border-radius: 12px;
+}
+
+.container2 .inner2 {
+  background-color: #00B6FF;
+  padding: 1em;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-clip-path: inset(0% 0% 0% 100%);
+          clip-path: inset(0% 0% 0% 100%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.container2:hover .inner2 {
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
+}
+/*# sourceMappingURL=main.css.map */

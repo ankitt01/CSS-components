@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+.container {
+    display: column;
+    columns: 3;
+    /* max-width: 32vw; */
+    width: 70%;
+    margin: 50px auto;
+    gap: 0.5em;
+}   
+
+img {
+    width: 100%;
+    transition: 250ms;
+}
+.container > * {
+    /* -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid; */
+    margin-bottom: 0.2em;
+}
+
+img:hover  {
+    transform: scale(1.01)
+}
